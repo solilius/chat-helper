@@ -9,5 +9,9 @@
             ],
             "js": ["content.js"]
         }
+    ],
+    "web_accessible_resources": [
+        "http://localhost:8080/floatingButton.html",
+        "http://localhost:8080/floatingButton.js"
     ]
 }

@@ -1,1 +1,5 @@
-<script>console.log("im here");</script>
+console.log("hello from file");
+
+function clicked(){
+    console.log("clicked");
+}
