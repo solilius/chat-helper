@@ -1,5 +1,6 @@
-console.log("hello from file");
+console.log("hello from .js");
 
 function clicked(){
     console.log("clicked");
 }
+
