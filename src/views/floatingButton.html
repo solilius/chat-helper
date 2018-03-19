@@ -1,17 +1,49 @@
 <style>
-    .float{
+    .float-btn{
         position:fixed;
-        bottom:40px;
-        left:40px;
+        height: 15vh;
+        bottom: 3vh;
+        left:1.5%;
+        opacity: 0.7;
 
     }
+    .float-btn:active{
+        transform: scale(0.96);
+    }
+    .popup{
+        visibility: hidden;
+    }
+    .popup-body{
+        position: fixed;
+        bottom: 20vh;
+        left: 3%;
+        background: blueviolet;
+        width: 500px;
+        height: 70vh;
+        border-radius: 20px;
+    }
+    .arrow-down {
+        position: fixed;
+        bottom: 17.8vh;
+        left: 4%;
+        width: 0; 
+        height: 0; 
+        border-left: 24px solid transparent;
+        border-right: 25px solid transparent;
+        
+        border-top: 19px solid blueviolet;
+      }
 
-    .logo{
-        width:100px;
-        height: 100px;
+    .frame{
+        width: 100%;
+        height: 100%;
     }
 
 </style>
-
-
-<img class="float logo" onclick="clicked()" src="http://localhost:8080/resources/3060.png" />
+<div>
+    <div class="popup slide">
+        <div class="arrow-down w3-container w3-center w3-animate-bottom"></div>
+        <div class="popup-body"> <iframe class="frame" frameBorder="0" src="http://localhost:8080/views/demo.html"></iframe> </div>
+    </div>
+    <img class="float-btn" onclick="clicked()" src="http://localhost:8080/resources/3060.png" />
+</div>

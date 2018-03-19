@@ -10,7 +10,6 @@ fetch('http://localhost:8080/views/floatingButton.html')
 injectScript('http://localhost:8080/scripts/floatingButton.js');
 
 
-
 function injectScript(url){
     var head = document.getElementsByTagName('head')[0];
     var script = document.createElement('script');
